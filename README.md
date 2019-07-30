@@ -26,4 +26,6 @@ After annotating around 1000 images (with size 640x640), the next step is to con
 
 ## Training the network
 
-The code for training the network and performing the predictions is using Keras with Tensorflow as a backend. 
+The code for training the network and performing the predictions is using Keras with Tensorflow as a backend. The __requirements.txt__ file contains all the python packages that need to be installed.
+
+
