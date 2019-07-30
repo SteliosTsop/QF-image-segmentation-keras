@@ -23,3 +23,7 @@ The annotation for the SEM fracture images has been performed with the online op
 
 After annotating around 1000 images (with size 640x640), the next step is to convert the annotations into a format that is suitable for the training program. This is done using the __Export_annotations.py__ script in the __Convert_VGG_Annotations__ folder.  
 
+
+## Training the network
+
+The code for training the network and performing the predictions is using Keras with Tensorflow as a backend. 
