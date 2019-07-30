@@ -8,7 +8,7 @@ The main objective of publishing this work is to propose a new method for the to
 
 More specifically, the Convolutional Neural Network (CNN) model after being trained in Scanning Electron Microscopy (SEM) images of fracture surfaces is able to identify the _intergranular_ or _transgranular_ fracture modes for any brittle material.
 
-
+![SEM image and U-net predictions](data/github_img1.jpg)
 
 
 ## Annotation of the training and validation datasets
