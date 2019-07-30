@@ -8,16 +8,16 @@ The main objective of publishing this work is to propose a new method for the to
 
 More specifically, the Convolutional Neural Network (CNN) model after being trained in Scanning Electron Microscopy (SEM) images of fracture surfaces is able to identify the _intergranular_ or _transgranular_ fracture modes for any brittle material.
 
-<img source="data/SEM_Predictions.jpg">
+<img src="data/SEM_Predictions.jpg">
 
 
 ## Annotation of the training and validation datasets
 
 The first part of the training of every Convolutional Neural Network (CNN) model involveds the annotation of the images. In our case the dataset is composed by SEM images of the fracture surfaces. 
 
-The annotation for the SEM fracture images has been performed with the online open source VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/via.html). Using the polygon tool it becomes possible to label the different areas of the SEM images as _intergranular_ or _transgranular_, while the areas that were more ambiguous or between the borders of adjucent areas were classified as _backgraound_. Furthermore, the image annotation is a very time consuming task and the introduction of the _background_ label was necessary.
+The annotation for the SEM fracture images has been performed with the online open source VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/via.html). Using the polygon tool it becomes possible to label the different areas of the SEM images as _intergranular_ or _transgranular_, while the areas that were more ambiguous or between the borders of adjucent areas were classified as _background_. Furthermore, the image annotation is a very time consuming task and the introduction of the _background_ label was necessary.
 
-<img source="data/VGG_annotator.jpg">
+![VIA](data/VGG_annotator.jpg){:height="24px" width="48px"}
 
 
 
