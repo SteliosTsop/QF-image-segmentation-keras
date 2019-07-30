@@ -18,7 +18,7 @@ The first part of the training of every Convolutional Neural Network (CNN) model
 The annotation for the SEM fracture images has been performed with the online open source VGG Image Annotator (http://www.robots.ox.ac.uk/~vgg/software/via/via.html). Using the polygon tool it becomes possible to label the different areas of the SEM images as _intergranular_ or _transgranular_, while the areas that were more ambiguous or between the borders of adjucent areas were classified as _background_. Furthermore, the image annotation is a very time consuming task and the introduction of the _background_ label was necessary.
 
 <p align="center">
-  <img src="data/VGG_annotator.jpg" width="150">
+  <img src="data/VGG_annotator.jpg" width="300">
 </p>
 
 
