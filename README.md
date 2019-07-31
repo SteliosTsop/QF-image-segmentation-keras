@@ -44,7 +44,7 @@ The __train.py__ code is used to train the network and the following command lin
 - __batch_size__ : depending on the GPU memory of your computer, define the batch size for training
 - __val_batch_size__ : depending on the GPU memory of your computer, define the batch size for training
 - __init_learning_rate__ : learning rate of training
-- __optimizer_name__ : choose optimizer - _options: rmsprop, adadelta, sgd / default: adam    
+- __optimizer_name__ : choose optimizer - _options: rmsprop, adadelta, sgd. Default parameter: adam    
 - __load_weights__ : directory of the pre-trained weights, in case of continuing the training from previous pre-trained stage. No need to define this in case of starting a new training. 
 
 An example of execution command is:
@@ -68,4 +68,20 @@ Using Tensorboard it is possible to monitor the training and validation accuraci
 
 ## Predictions
 
-Once the training is complete the training 
+Once the training is completed, the trained parameters of the each layer have been stored on the .hdf5 weights file. 
+
+Importing the weights to the __predict.py__ code it becomes possible to classify every pixel of any SEM fracture image of a brittle material as _intergranular_ or _transgranular_. The pixels that are not classified are considered as _background_, as it is done in the training process. 
+
+To run the predict.py script, it is neccesary to provide the path for the trained weights (__save_weights_path__), the number of classes (__nClasses__), the dimensions of the test images that you wish to classify(__input_height__ and __input_width__) and the directory of the test images. Note that the dimensions of the test image can be different than the dimensions of the images that are used during the training(_640x640_) and interestringly the predictions on larger images (_1280x1280_) where equal or even more accurate than the images of the same size as the training images.
+
+So, you can run the following command:
+
+```
+python  predict.py --save_weights_path=weights/weights_file.hdf5 \
+                   --test_images="Convert_VGG_Annotations/fracture_images/test/" \ 
+                   --n_classes=3 --input_height=1280 --input_width=1280
+```
+
+And you have classified your fracture images !!!
+
+
