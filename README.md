@@ -50,7 +50,7 @@ The __train.py__ code is used to train the network and the following command lin
 An example of execution command is:
 
 ```
-python train.py --save_weights_path="weights/trained_weights.hdf5" --logs="logs/" --start_epoch=0 \
+python train.py --save_weights_path="weights/" --logs="logs/" --start_epoch=0 \
                 --train_images="Convert_VGG_Annotations/fracture_images/train/" \
                 --train_annotations="Convert_VGG_Annotations/annotations/train/" \
                 --val_images="Convert_VGG_Annotations/fracture_images/val/" \
