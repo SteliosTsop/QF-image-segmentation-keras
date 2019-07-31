@@ -30,4 +30,19 @@ The code for training the network and performing the predictions is using Keras 
 The __train.py__ code is used to train the network and the following command line arguments need to be defined:
 
 - __save_weights_path__ : directory to save the .hdf5 file of the trained weights
-- __train_images__ : directory of the training dataset ()
+- __train_images__ : directory of the training dataset (_/Convert_VGG_Annotations/fracture_images/train_)
+- __val_images__ : directory of the validation dataset (_/Convert_VGG_Annotations/fracture_images/val_)
+- __train_annotations__ : directory of the annotations of the training dataset (_/Convert_VGG_Annotations/annotations/train_)
+- __val_annotations__ : directory of the annotations of the validation dataset (_/Convert_VGG_Annotations/annotations/val_)
+- __logs__ : directory of Tensorboard log files
+- __n_classes__ : number of classes (including the _background_ class)
+- __input_height__ : height in pixels of the train and val images(default value: _640_) 
+- __input_width__ : width in pixels of the train and val images(default value: _640_) 
+- __start_epoch__ : initial epoch to start the training - _ if it is a new training, use the default value zero_
+- __end_epoch__ : final training epoch
+- __epoch_steps__ : number of iterations per epoch
+- __batch_size__ : depending on the GPU memory of your computer, define the batch size for training
+- __val_batch_size__ : depending on the GPU memory of your computer, define the batch size for training
+- __init_learning_rate__ : learning rate of training
+- __optimizer_name__ : choose optimizer - _options: rmsprop, adadelta, sgd / default: adam    
+- __load_weights__ : directory of the pre-trained weights, in case of continuing the training from previous pre-trained stage. No need to define this in case of starting a new training. 
