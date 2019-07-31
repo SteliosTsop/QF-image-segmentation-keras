@@ -27,5 +27,6 @@ After annotating around 1000 images (with size 640x640), the next step is to con
 ## Training the network
 
 The code for training the network and performing the predictions is using Keras with Tensorflow as a backend. 
+The __train.py__ code is used to train the network and the following command line arguments need to be defined:
 
 
