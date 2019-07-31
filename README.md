@@ -46,3 +46,15 @@ The __train.py__ code is used to train the network and the following command lin
 - __init_learning_rate__ : learning rate of training
 - __optimizer_name__ : choose optimizer - _options: rmsprop, adadelta, sgd / default: adam    
 - __load_weights__ : directory of the pre-trained weights, in case of continuing the training from previous pre-trained stage. No need to define this in case of starting a new training. 
+
+An example of execution command is:
+
+```
+python train.py --save_weights_path="weights/trained_weights.hdf5" --logs="logs/" --start_epoch=0 \
+                --train_images="Convert_VGG_Annotations/fracture_images/train" \
+                --train_annotations="Convert_VGG_Annotations/annotations/train" \
+                --val_images="Convert_VGG_Annotations/fracture_images/val" \
+                --val_annotations="Convert_VGG_Annotations/annotations/val" \
+                --n_classes=3  --optimizer_name="adadelta" \
+                --init_learning_rate=0.00008 --input_height=640 --input_width=640
+```
