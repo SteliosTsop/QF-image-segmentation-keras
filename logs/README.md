@@ -7,3 +7,6 @@ tensorboard --logdir=directory-of-log-files  --host=127.0.0.1
 ```
 
 and open the local host URL with the internet browser.
+
+
+<img src="../images/tb_unet.jpg">
