@@ -38,7 +38,7 @@ The __train.py__ code is used to train the network and the following command lin
 - __n_classes__ : number of classes (including the _background_ class)
 - __input_height__ : height in pixels of the train and val images(default value: _640_) 
 - __input_width__ : width in pixels of the train and val images(default value: _640_) 
-- __start_epoch__ : initial epoch to start the training - _ if it is a new training, use the default value zero_
+- __start_epoch__ : initial epoch to start the training - _if it is a new training, use the default value zero_
 - __end_epoch__ : final training epoch
 - __epoch_steps__ : number of iterations per epoch
 - __batch_size__ : depending on the GPU memory of your computer, define the batch size for training
