@@ -23,7 +23,7 @@ sys.path.append(ROOT_DIR)
 
 
 # Annotations directory
-ANNOT_DIR = os.path.join(ROOT_DIR, "fracture_images\\val")
+ANNOT_DIR = os.path.join(ROOT_DIR, "fracture_images\train")
 
 
 # Create a annotation class object
@@ -66,7 +66,7 @@ for img_id in img_ids:
     t[t>=200] = 2
     
     # Export the annotated images in the format that the segmentation code requires.
-    img_dir = os.path.join(ROOT_DIR, "fracture_images\\annotations_val")
+    img_dir = os.path.join(ROOT_DIR, "annotations\train")
     img_name = info["id"][:-4] + ".png"
     out_dir = os.path.join(img_dir, img_name)
     
