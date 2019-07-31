@@ -63,9 +63,8 @@ It is important to note that the training and the validation accuracy should not
 
 Using Tensorboard it is possible to monitor the training and validation accuracies ( or Losses) and fine-tune the training parameters to acheive the best training of the model.
 
-<p align="center">
-  <img src="images/tensorboard_unet.jpg" width="300">
-</p>
+<img src="images/tensorboard_unet.jpg">
+
 
 ## Predictions
 
