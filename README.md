@@ -58,3 +58,15 @@ python train.py --save_weights_path="weights/" --logs="logs/" --start_epoch=0 \
                 --n_classes=3  --optimizer_name="adadelta" \
                 --init_learning_rate=0.00008 --input_height=640 --input_width=640
 ```
+
+It is important to note that the training and the validation accuracy should not be very different. High training accuracy with low validation accuracy can be an indication of __overfitting__ and this can result into low accuracy predictions on a new dataset. Our maximum training accuracy was __72.5%__, while the maximum validation accuracy reached to __71.3%__. 
+
+Using Tensorboard it is possible to monitor the training and validation accuracies ( or Losses) and fine-tune the training parameters to acheive the best training of the model.
+
+<p align="center">
+  <img src="images/tensorboard_unet.jpg" width="300">
+</p>
+
+## Predictions
+
+Once the training is complete the training 
