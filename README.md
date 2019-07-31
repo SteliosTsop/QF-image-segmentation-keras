@@ -85,3 +85,13 @@ python  predict.py --save_weights_path="weights/weights_file.hdf5" \
 And you have classified your fracture images !!!
 
 <img src="images/predictions.jpg">
+
+
+### Prerequisites
+
+- Keras 2.0
+- Opencv for Python 
+- Tensorflow 
+- Pillow
+
+
