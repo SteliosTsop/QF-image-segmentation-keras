@@ -88,10 +88,10 @@ def VGG16_Unet( n_classes , load_vgg, input_height, input_width, batch_norm = Fa
 
     u10 = UpSampling2D((2, 2))(c10)
     u10 = concatenate([u10, c1], axis=3)
-    c11 = Conv2D(64, (3, 3), padding='same')(u10)
-    c11 = Conv2D(64, (3, 3), padding='same')(c11)
+    c11 = Conv2D(128, (3, 3), padding='same')(u10)
+    c11 = Conv2D(128, (3, 3), padding='same')(c11)
 
-    o = Conv2D(n_classes, (1, 1), padding='valid')(c11)
+    o = Conv2D(n_classes, (3, 3), padding='valid')(c11)
 
     o_shape = Model(img_input, o).output_shape
     outputHeight = o_shape[1]
