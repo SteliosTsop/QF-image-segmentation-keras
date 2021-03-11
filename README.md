@@ -77,9 +77,7 @@ To run the predict.py script, it is neccesary to provide the path for the traine
 So, you can run the following command:
 
 ```
-python  predict.py --save_weights_path="weights/weights_file.hdf5" \
-                   --test_images="Convert_VGG_Annotations/fracture_images/test/" \ 
-                   --n_classes=3 --input_height=1280 --input_width=1280
+python  predict.py --save_weights_path="weights/trained_weights.hdf5" --test_images="test_dataset/" --n_classes=3 --input_height=640 --input_width=640
 ```
 
 And you have classified your fracture images !!!
