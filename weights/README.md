@@ -1,3 +1,1 @@
-This folder contains the __.hdf5__ file of the weights that have trained during the training process. 
-
-It can be defined whether the weights are saved after each training epoch or only the weights of the epoch with the highest accuracy, by changing the parameters in the **_ModelCheckpoint()_** Keras function ( _line 101 of the train.py script_ ) 
+The **trained weights** can be downloaded by clicking on [this link](https://technionmail-my.sharepoint.com/:u:/g/personal/tsopanidis_campus_technion_ac_il/EWlBxa-O8hlDg5v1_4NjNCwBpBWZCG7DV5mKg1erGwTmQg)
